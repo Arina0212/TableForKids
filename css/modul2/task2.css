@@ -1,0 +1,145 @@
+.progress_indicator {
+  width: 162px;
+}
+.tasks {
+  margin-top: 125px;
+  height: 464px;
+}
+
+#answer1 {
+  height: 139px;
+}
+
+.ex1 {
+  margin-top: 7px;
+}
+
+.ex2 {
+  padding-top: 0px;
+}
+.exer{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+#roctangle{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 78px;
+  gap: 10px;
+
+  width: 793px;
+  height: 54px;
+  margin-bottom: 9px;
+  margin-top: 7px;
+  background: #FFFFFF;
+  border-radius: 34px;
+}
+
+#roctangle2{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 661px;
+  height: 32px;
+  background: #FFFFFF;
+  border-radius: 34px;
+  font-weight: 550;
+  font-family: 'Roboto Condensed';
+  margin-top: 7px;
+}
+
+
+#roctangle p{
+  width: 673px;
+  height: 50px;
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 90.2%;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#roctangle2 p{
+  width: 531px;
+  height: 14px;
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 90.2%;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.roctangle1 {
+  width: 531px;
+  height: 14px;
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 90.2%;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #61488B;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+.continue {
+
+  margin-top: 0px;
+}
+
+.example3 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.clue {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+

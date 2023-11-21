@@ -1,0 +1,149 @@
+.progress_indicator {
+  width: 24px;
+}
+.tasks {
+  margin: 122px 56px 0 62px;
+  height: 467px;
+}
+
+#roctangle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 78px;
+  gap: 10px;
+
+  width: 889px;
+  height: 63px;
+  margin-bottom: 21px;
+
+  background: #FFFFFF;
+  border-radius: 34px;
+}
+
+#roctangle p{
+  width: 766px;
+  height: 45px;
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 90.2%;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.exer{
+  margin-left: 72px;
+}
+
+.arrow{
+  position: absolute;
+  width: 47.31px;
+  height: 381.41px;
+  left: 32px;
+  top: 193px;
+}
+
+#answer1 {
+  position: absolute;
+  left: 686px;
+  top: 410px;
+}
+
+.ex {
+  padding-top: 40px;
+}
+
+#answer2 {
+  position: absolute;
+  left: 10000px;
+  top: 41110px;
+  opacity: 0;
+}
+
+
+
+#show {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 8px;
+  top: 590px;
+  border-radius: 50%;
+  border: 1px solid #3E9FB3;
+  background: #3E9FB3;
+  color: #FFFFFF;
+  font-family: Amelia_DG, serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+dialog {
+  position: absolute;
+  width: 1012px;
+  height: 724px;
+  left: 453px;
+  top: 140px;
+  border-radius: 20px;
+  border: 6px solid #3E9FB3;
+  align-items: center;
+
+}
+
+.diaolog img{
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+
+
+.diaolog p{
+  font-family: 'AA Magnum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1em;
+  margin-top: 15px;
+  color: #000000;
+}
+
+#close{
+  background: #3E9FB3;
+  border-radius: 20px;
+  border: 1px solid #3E9FB3;
+  margin-left: 0;
+  width: 202px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  font-family: 'AA Magnum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 61px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #FFFFFF;
+}
+

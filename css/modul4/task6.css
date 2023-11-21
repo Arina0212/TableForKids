@@ -1,0 +1,77 @@
+.progress_indicator {
+  width: 810px;
+}
+.tasks {
+  margin: 82px 56px 0 62px;
+  height: 467px;
+}
+
+#roctangle{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 78px;
+  gap: 10px;
+
+  width: 815px;
+  height: 63px;
+  margin-bottom: 21px;
+
+  background: #FFFFFF;
+  border-radius: 34px;
+}
+
+#roctangle p{
+  width: 659px;
+  height: 45px;
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 90.2%;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.exer{
+  margin-left: 72px;
+}
+
+#answer1 {
+  position: absolute;
+  left: 686px;
+  top: 377px;
+}
+
+.ex {
+  padding-top: 60px;
+}
+
+#answer2 {
+  position: absolute;
+  left: 10000px;
+  top: 41110px;
+  opacity: 0;
+}
+
+.ex1 {
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 70px;
+
+}
+
+.continue {
+  margin-top: 40px;
+
+
+}

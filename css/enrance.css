@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'AAMagnum';
+  src: url('../fonts/AA Magnum.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Amelia_DG';
+  src:  url("../fonts/Amelia_DG.woff") format('woff'),
+  url("../fonts/Amelia_DG.ttf")  format('truetype');
+}
+/*Страница входа*/
+.enter_name{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/registr.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 675.59px;
+}
+
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 865.59px;
+  background-color: #E6CBAE;
+  box-shadow: inset 0px -20px 40px #B89C7F, inset 20px 0px 40px #B89C7F;
+}
+
+
+.enter_name h1{
+  position: absolute;
+  width: 475px;
+  height: 54px;
+  left: 149.41px;
+  top: 187px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90.2%;
+  letter-spacing: 0.075em;
+  color: #E2582D;
+}
+.pole_enter{
+  position: absolute;
+  width: 455px;
+  height: 600px;
+  left: 159.41px;
+  top: 231px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.075em;
+  color: #000000;
+  line-height: 135px;
+}
+#email{
+  position: absolute;
+  width: 454px;
+  height: 78px;
+  font-weight: 100;
+  font-size: 20px;
+  left: 0px;
+  top: 90px;
+  background-color: #E6CBAE;
+  padding-left: 30px;
+  border: 5px solid #FFFFFF;
+  border-radius: 100px;
+}
+#password{
+  position: absolute;
+  width: 454px;
+  height: 78px;
+  font-weight: 100;
+  font-size: 20px;
+  left: 0px;
+  top: 224px;
+  background-color: #E6CBAE;
+  padding-left: 30px;
+  border: 5px solid #FFFFFF;
+  border-radius: 100px;
+}
+#eye{
+  position: absolute;
+  top: 254px;
+  left: 410px;
+  color: #ffffff;
+}
+
+.reg__owl {
+  position: absolute;
+  bottom: -3px;
+  left: 123px;
+}
+
+.reg__owl img {
+  width: 547px;
+  height: 538px;
+  filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.34));
+}
+#circle2_1{
+  position: absolute;
+  width: 87px;
+  height: 87px;
+  left: 185px;
+  top: 251px;
+  border-radius: 50%;
+  background: #E6643B;
+  border: 14px solid #370965;
+}
+#circle2_2{
+  position: absolute;
+  width: 137px;
+  height: 137px;
+  left: 333px;
+  top: 50px;
+  border-radius: 50%;
+  background: #E6CBAE;
+  border: 13px solid #60AA3D;
+}
+#circle2_3{
+
+  position: absolute;
+  width: 242px;
+  height: 242px;
+  left: 549px;
+  top: 187px;
+  border-radius: 50%;
+  background: #5A8BAB;
+  border: 36px solid #370965;
+}
+
+#circle2_4{
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  left: -49px;
+  top: 679px;
+  border-radius: 50%;
+  background: #E7643B;
+  border: 14px solid #370965;
+  box-shadow: 15px 11px 50px rgba(0, 0, 0, 0.25);
+}
+.line3{
+  position: absolute;
+  width: 217px;
+  height: 0px;
+  left: -8px;
+  top: 318px;
+  border: 1px solid #583A89;
+}
+.or2{
+  position: absolute;
+  width: 25px;
+  height: 14px;
+  left: 215px;
+  top: 313px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 90.2%;
+  letter-spacing: 0.075em;
+  color: #583A89;
+}
+.line4{
+  position: absolute;
+  width: 217px;
+  height: 0px;
+  left: 247px;
+  top: 318px;
+  border: 1px solid #583A89;
+}
+.discript_enter{
+  position: absolute;
+  width: 286px;
+  height: 48px;
+  left: 81px;
+  top: 330px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 118.2%;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: #000000;
+}
+.registr{
+  position: absolute;
+  width: 286px;
+  height: 48px;
+  left: 81px;
+  top: 355px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 118.2%;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: #606160;
+}
+
+.enter_akk_butom{
+  font-family: "AAMagnum", fantasy;
+  border: 5px solid #58A532;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.11em;
+  text-transform: capitalize;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  width: 303px;
+  height: 66px;
+  left: 75px;
+  top: 388px;
+  background: #58A532;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+}
+.enter_akk_butom:hover{
+  background-color: #FFF;
+  color: #58A532;
+  border: 5px solid #FFF;
+}

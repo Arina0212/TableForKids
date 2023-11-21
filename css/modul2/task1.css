@@ -1,0 +1,116 @@
+.progress_indicator {
+  width: 24px;
+}
+.tasks {
+  margin-top: 122px;
+  height: 468px;
+}
+
+#answer1 {
+  height: 139px;
+}
+
+.ex1 {
+  margin-top: -18px;
+}
+
+.ex2 {
+  padding-top: 8px;
+}
+.exer{
+  margin-top: -51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+#roctangle{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 78px;
+  gap: 10px;
+
+  width: 829px;
+  height: 64px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background: #FFFFFF;
+  border-radius: 34px;
+}
+
+#roctangle2{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 661px;
+  height: 32px;
+  font-weight: 550;
+  background: #FFFFFF;
+  border-radius: 34px;
+  font-family: 'Roboto Condensed';
+  margin-top: 7px;
+  font-size: 20px;
+}
+
+
+#roctangle p{
+  width: 673px;
+  height: 50px;
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90.2%;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.roctangle1 {
+  width: 505px;
+  height: 45px;
+
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90.2%;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #61488B;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+.continue {
+
+  margin-top: 50px;
+}
+
+.example3 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 5px;
+}

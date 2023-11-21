@@ -1,0 +1,22 @@
+.progress_indicator {
+  width: 486px;
+}
+.tasks{
+  margin: 150px 120px 0 50px;
+  height: 436px;
+}
+#answer1 {
+  position: absolute;
+  left: 807px;
+  top: 144px;
+}
+
+.three {
+  padding-top: 104px;
+}
+
+#answer2 {
+  position: absolute;
+  left: 807px;
+  top: 390px;
+}

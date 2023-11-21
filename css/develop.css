@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'AAMagnum';
+  src: url('../fonts/AA Magnum.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Amelia_DG';
+  src:  url("../fonts/Amelia_DG.woff") format('woff'),
+  url("../fonts/Amelia_DG.ttf")  format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  font-family: "AAMagnum", fantasy;
+}
+
+a {
+  text-decoration: none;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.main__content {
+  flex: 1;
+  position: relative;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 135px;
+  /*overflow: hidden;*/
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.error_bloсk{
+  margin-top: 100px;
+  width: 1190px;
+  height: 900px;
+  align-content: center;
+}
+.ellipse{
+  position: center;
+  width: 606px;
+  height: 361.22px;
+  align-content: center;
+}
+.error{
+  position: absolute;
+  width: 630px;
+  align-content: center;
+  left: 418px;
+  top: 36px;
+
+}
+.yps{
+  position: absolute;
+  width: 267px;
+  height: 65px;
+  left: 671px;
+  top: 623px;
+
+  font-family: 'Amelia_DG', fantasy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #4679DC;
+
+}
+.discript{
+  position: absolute;
+  width: 421px;
+  height: 66px;
+  left: 521px;
+  top: 739px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 90.2%;
+  /* or 22px */
+
+  text-align: center;
+  letter-spacing: 0.075em;
+  align-content: center;
+  color: #EA514B;
+
+}
+.content_link{
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 22px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 295px;
+  height: 66px;
+  left: 572px;
+  top: 846px;
+  color: #FFFFFF;
+  background: #583A89;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+}
+.content_link:hover{
+  background-color: rgb(88, 58, 137);
+  color: #452872;
+}
+
+.content_link p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 90.2%;
+  text-align: center;
+  letter-spacing: 0.075em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
