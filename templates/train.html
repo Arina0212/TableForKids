@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="../img/image1.png" type="image/x-icon" sizes="180"/>
+  <meta name="description" content="Сайт для обучения детей таблице умножения">
+  <title>Тренажер таблицы умножения</title>
+  <script type="text/javascript" src="https://yandex.st/jquery/1.8.2/jquery.min.js"></script>
+  <link href="../css/train.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  <header class="header">
+    <nav class="header__content">
+      <ul class="header__navigation">
+        <li class="header__content_item">
+          <a class="header__content_link" href="index.html">главная</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="about.html">личный кабинет</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="education.html">обучение</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="awards.html">награды</a>
+        </li>
+      </ul>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="train.html">Тренажер таблицы умножения</a></li>
+          <li><a class="menu__item" href="table.html">Таблица умножения</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__content">
+      <!-- калькулятор - начало -->
+      <div id="circle2_1"></div>
+      <div id="circle2_2"></div>
+      <div id="circle2_3"></div>
+      <div id="circle2_4"></div>
+      <div id="circle2_5"></div>
+
+      <div class="title_train">
+        <h1 class="title_tr">Тренажер </h1>
+      </div>
+      <div class="train">
+        <table>
+          <tr>
+            <td colspan="3" id="question">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" id="output_row">
+              <input type="text" id="output" maxlength="100" onkeyup="this.value = this.value.replace(/[^\d]/g,'')"
+                     required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button onClick="set_digit(1);">1</button>
+            </td>
+            <td>
+              <button onClick="set_digit(2);">2</button>
+            </td>
+            <td>
+              <button onClick="set_digit(3);">3</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button onClick="set_digit(4);">4</button>
+            </td>
+            <td>
+              <button onClick="set_digit(5);">5</button>
+            </td>
+            <td>
+              <button onClick="set_digit(6);">6</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button onClick="set_digit(7);">7</button>
+            </td>
+            <td>
+              <button onClick="set_digit(8);">8</button>
+            </td>
+            <td>
+              <button onClick="set_digit(9);">9</button>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button onClick="set_digit(0);">0</button>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <button class="delete" onClick="clear_digit();" title="Очистить">Стереть</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" id="answer_row">
+              <button class="set_answer" onClick="set_answer();">Ответить</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" id="stat" style="font-size: 22px;">&nbsp;</td>
+          </tr>
+        </table>
+        <dialog>
+          <p>Запомни!</p>
+          <p id="error"></p>
+          <p><button id="close">Закрыть</button></p>
+        </dialog>
+        <button id="show">Открыть всплывающее окно!</button>
+      </div>
+      <script>
+
+        var first_digit = 0;
+        var second_digit = 0;
+
+        var yes_answer = 0;
+        var no_answer = 0;
+        var dialog = document.querySelector('dialog');
+
+        // получение случайного числа в заданном диапазоне
+        function get_random_int(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+
+        // формирование примера для решения
+        function set_example() {
+          first_digit = get_random_int(0, 10);
+          second_digit = get_random_int(0, 10);
+          $("#question").html(first_digit + ' ✖ ' + second_digit + ' = ?');
+        }
+
+
+        // обработка нажатой кнопки
+        function set_digit(digit) {
+          // cur_value - текущее значение на табло
+          // show_value - то значение, которое БУДЕТ отображаться на табло
+
+          if ($("#output").val() == '') {
+            var cur_value = 0;
+          } else {
+            var cur_value = parseInt($("#output").val(), 10);
+          }
+
+          // проводим расчет нового значения
+
+          var show_value = 0;
+
+          if (cur_value == 0) {
+            show_value = digit;
+          } else {
+            show_value = 10 * cur_value + digit;
+          }
+
+          // вывод на табло
+          $("#output").val(show_value);
+        }
+
+
+        // очистка табло
+        function clear_digit() {
+          $("#output").val('');
+        }
+
+
+        // вывод статистики
+        function draw_stat() {
+          $("#stat").html('<span style="color: #5FAB3B; font-weight: bold; font-size: 45px">' + yes_answer + '</span> | <span style="color: #E7643B; font-weight: bold; font-size: 45px">' + no_answer + '</span>');
+        }
+
+        // проверка ответа
+        function set_answer() {
+          // cur_value - текущее значение на табло
+
+          var cur_value = parseInt($("#output").val(), 10);
+
+          if (cur_value == first_digit * second_digit) {
+            yes_answer++;
+          } else {
+            no_answer++;
+            windowfly();
+          }
+          clear_digit();
+          set_example();
+          draw_stat();
+        }
+
+        //всплывающее окно
+        function windowfly() {
+          dialog.showModal();
+          $("#error").html(first_digit + ' ✖ ' + second_digit + ' = ' + (first_digit * second_digit));
+          document.querySelector('#show').onclick = function () {
+            dialog.showModal();
+          };
+
+          document.querySelector('#close').onclick = function () {
+            dialog.close();
+          };
+        }
+        set_example();
+        draw_stat();
+
+        $("#output").on('keydown', function (e) {
+          if (e.keyCode == 13) {
+            set_answer();
+          }
+        });
+
+      </script>
+    </div>
+  </main>
+</div>
+</body>
+</html>

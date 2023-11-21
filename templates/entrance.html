@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Личный кабинет</title>
+  <link rel="shortcut icon" href="../img/image1.png" type="image/x-icon" sizes="180"/>
+  <meta name="description" content="Сайт для обучения детей таблице умножения">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/enrance.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <nav class="header__content">
+      <ul class="header__navigation">
+        <li class="header__content_item">
+          <a class="header__content_link" href="index.html">главная</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="about.html">личный кабинет</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="education.html">обучение</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="awards.html">награды</a>
+        </li>
+      </ul>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="train.html">Тренажер таблицы умножения</a></li>
+          <li><a class="menu__item" href="table.html">Таблица умножения</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__content">
+
+      <div id="circle2_1"></div>
+      <div id="circle2_2"></div>
+      <div id="circle2_3"></div>
+      <div class="reg__owl">
+        <img src="../img/сова.png">
+      </div>
+      <div class="enrance_form">
+        <form action="about.html" method="post" target="_blank">
+          <div class="back"></div>
+          <div class="enter_name">
+            <div id="circle2_4"></div>
+            <h1>войти в аккаунт</h1>
+            <div class="pole_enter">
+              <div class="input-field">
+                <label for="email">адрес Email</label><br>
+                <input type="email"  placeholder="email@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" required>
+              </div>
+              <div class="input-field">
+                <label for="password">пароль</label><br>
+                <input type="password" placeholder="Введите пароль" id="password">
+                <aside id="eye" class="far fa-eye-slash"></aside>
+
+              </div>
+              <aside class="line3"></aside>
+              <p class="or2">или</p>
+              <aside class="line4"></aside>
+              <p class="discript_enter">Если у вас еще нет аккаунта</p>
+              <div>
+                <a class="registr" href="Registration.html" > создайте его</a>
+              </div>
+              <div class="enter_akk">
+                <button class="enter_akk_butom" type="submit" >войти в аккаунт</button>
+              </div>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../js/login-page.js"></script>
+</body>
+</html>

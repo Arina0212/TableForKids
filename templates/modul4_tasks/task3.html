@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Награды</title>
+  <link rel="shortcut icon" href="../../img/image1.png" type="image/x-icon" sizes="180"/>
+  <meta name="description" content="Сайт для обучения детей таблице умножения">
+  <link href="../../css/tasks.css" rel="stylesheet">
+  <link href="../../css/modul4/task3.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+  <header class="header">
+    <nav class="header__content">
+      <ul class="header__navigation">
+        <li class="header__content_item">
+          <a class="header__content_link" href="../index.html">главная</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="../about.html">личный кабинет</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link__active" href="../education.html">обучение</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="../awards.html">награды</a>
+        </li>
+      </ul>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="../train.html">Тренажер таблицы умножения</a></li>
+          <li><a class="menu__item" href="../table.html">Таблица умножения</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <main class="main">
+    <a href="task2.html"><img class="back" src="../../img/back.png"/></a>
+    <div class="main__content">
+      <div class="information">
+        <div id="ellipse">
+          <h1>модуль 4 - задания</h1>
+        </div>
+        <div class="animals">
+          <img class="cloud" src="../../img/cloud_raccoon.png" width="147">
+          <img class="animal" src="../../img/raccoon.png" height="138">
+          <p class="motivation n1" id="n1" style="opacity: 1">Подумай хорошо!</p>
+          <p class="motivation n2" id="n2" style="opacity: 0">Не сдавайся!</p>
+          <p class="motivation n3" id="n3" style="opacity: 0">Хм...Что-то не так попробуй еще раз</p>
+          <p class="motivation n4" id="n4" style="opacity: 0">Молодец!</p>
+          <p class="motivation n5" id="n5" style="opacity: 0">ты так быстро считаешь!</p>
+        </div>
+      </div>
+      <div class="task">
+        <div id="roctangle_progress">
+          <div class="progress_indicator_track">
+            <div class="progress_indicator" id="progress_indicator"></div>
+          </div>
+          <div class="ruler">
+            <p>1 2 3 4 5 6</p>
+            <aside class="line1"></aside>
+            <aside class="line2"></aside>
+            <aside class="line3"></aside>
+            <aside class="line4"></aside>
+            <aside class="line5"></aside>
+          </div>
+        </div>
+        <div id="tasks" class="tasks task3">
+          <div class="exer">
+            <img class="ex1" src="../../img/7на2=14.png" width="713.92">
+            <img src="../../img/2на7.png" class="ex" width="524.92">
+            <div class="input-field">
+              <input type="text" id="answer1" maxlength="3" onkeyup="this.value = this.value.replace(/[^\d]/g,'')"
+                     required>
+            </div>
+            <div class="input-field">
+              <input type="text" id="answer2" maxlength="3" onkeyup="this.value = this.value.replace(/[^\d]/g,'')"
+                     required>
+            </div>
+          </div>
+        </div>
+        <div class="but">
+          <button class="continue" id="button" onclick="check()">проверить</button>
+
+        </div>
+        <a class="next" id="next_but" href="task4.html"><img src="../../img/next.png" width="66"></a>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../../js/modul4_tasks.js"></script>
+</body>
+</html>

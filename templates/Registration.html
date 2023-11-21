@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Личный кабинет</title>
+  <link rel="shortcut icon" href="../img/image1.png" type="image/x-icon" sizes="180"/>
+  <meta name="description" content="Сайт для обучения детей таблице умножения">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/registration.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="../js/login-page.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <header class="header">
+    <nav class="header__content">
+      <ul class="header__navigation">
+        <li class="header__content_item">
+          <a class="header__content_link" href="index.html">главная</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="about.html">личный кабинет</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="education.html">обучение</a>
+        </li>
+        <li class="header__content_item">
+          <a class="header__content_link" href="awards.html">награды</a>
+        </li>
+      </ul>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="train.html">Тренажер таблицы умножения</a></li>
+          <li><a class="menu__item" href="table.html">Таблица умножения</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="main__content">
+
+      <div id="circle2_1"></div>
+      <div id="circle2_2"></div>
+      <div id="circle2_3"></div>
+      <div class="reg__owl">
+        <img src="../img/сова.png">
+      </div>
+
+      <div class="regist_form">
+        <form action="#" method="post" target="_blank">
+          <div class="back"> </div>
+          <div class="regist_name">
+              <div id="circle2_4"></div>
+              <h1>Создать аккаунт</h1>
+              <div class="pole">
+
+                <div class="input-field">
+                  <label id="firstname-1" >Имя</label>
+                  <input type="text" placeholder="Введите фамилию" maxlength="40" id="firstname" required>
+                </div>
+
+                <div class="input-field">
+                  <label for="surname">Фамилия</label>
+                  <input type="text" placeholder="Введите имя" maxlength="40" id="surname" required>
+                </div>
+
+                <div class="input-field">
+                  <label for="email">адрес Email</label>
+                  <input type="email" placeholder="email@email.com" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" maxlength="40" id="email"  required>
+                </div>
+                <div class="input-field">
+                  <label for="password">Придумайте пароль</label>
+                  <input type="password" placeholder="Введите пароль" maxlength="10" id="password">
+                  <aside id="eye" class="far fa-eye-slash"></aside>
+                </div>
+                <aside class="line1"></aside>
+                <aside class="line2"></aside>
+                <aside class="line1"></aside>
+                <p class="or">или</p>
+                <aside class="line2"></aside>
+                <p class="discript">Если у вас уже есть аккаунт</p>
+                <div>
+                  <a class="enter" href="entrance.html">войдите в него</a>
+                </div>
+                <div class="create_akk">
+                  <a class="create_akk_butom" onclick="create()" >создать аккаунт</a>
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+      <dialog class="diaolog">
+        <p>Ваш аккаунт был успешно создан</p>
+        <p><button id="close"><a href="about.html">Закрыть</a> </button></p>
+      </dialog>
+      <button id="show" ></button>
+    </div>
+  </main>
+</div>
+<script src="../js/login-page.js"></script>
+<script>
+  var dialog = document.querySelector('dialog');
+function create() {
+  dialog.showModal();
+  document.querySelector('#show').onclick = function () {
+    dialog.showModal();
+  };
+
+  document.querySelector('#close').onclick = function () {
+    dialog.close();
+  };
+}
+</script>
+</body>
+</html>
