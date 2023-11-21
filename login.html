@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== Iconscout CSS ===== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- ===== CSS ===== -->
+
+
+  <!--<title>Login & Registration Form</title>-->
+</head>
+<body>
+
+<div class="container">
+  <dialog>
+    <p>Это окно, которое сделано на html5 и javascript</p>
+    <button id="close">Закрыть</button>
+  </dialog>
+  <button id="show">Открыть всплывающее окно!</button>
+</div>
+
+<script type=text/javascript>
+  var dialog = document.querySelector('dialog');
+  document.querySelector('#show').onclick = function () {
+    dialog.showModal();
+  };
+  document.querySelector('#close').onclick = function () {
+    dialog.close();
+  };
+</script>
+
+</body>
+</html>
